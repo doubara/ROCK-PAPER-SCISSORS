@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <main class="main main--wrapper">
+      <section class="score-board">
+        <img class="score__board__logo" src="images/logo.svg" alt="" />
+        <div class="score-board__score">
+          <h2 class="score-board__score__title">Score</h2>
+          <h2 class="score-board__score__number">00</h2>
+        </div>
+      </section>
+      <section class="picker">
+        <section class="picker__wrapper">
+          <figure class="picker__figure rock rock--alter">
+            <img data-choose="Rock" class="picker__figure__img" src="images/icon-rock.svg" alt="" />
+          </figure>
+          <figure class="picker__figure paper paper--alter">
+            <img <img data-choose="Paper" class="picker__figure__img" src="images/icon-paper.svg" alt="" />
+          </figure>
+          <figure class="picker__figure scissors scissors--alter">
+            <img <img data-choose="Scissors" class="picker__figure__img" src="images/icon-scissors.svg" alt="" />
+          </figure>
+        </section>
+        <section class="picker__wrapper-2">
+          <div class="choice--div my--pick">
+              <!--
+              <figure class="picker__figure scissors my--pick">
+                
+                 <img class="picker__figure__img" src="./images/icon-scissors.svg" alt="" />
+              </figure>
+             -->
+          </div>
+          <div class="choice--div sys--pick">
+              <!--
+              <figure class="picker__figure sys--pick">
+                 <img class="picker__figure__img paper" src="./images/icon-paper.svg" alt="" />
+              </figure>
+              -->
+          </div>
+            
+          <h3 class="picker__choice my--pick__title">You Picked</h3>
+          <h3 class="picker__choice sys--pick__title">The House Picked</h3>
+          <div class="picker__status">
+            <h1 class="picker__status__title">YOU WIN</h1>
+            <button class="picker__status__button">Play again</button>
+          </div>
+        </section>
+      </section>
+      <div class="rules__modal">
+          <h3>Rules</h3>
+          <section class="rules__modal__indicator">
+          </section>
+          <button id="rules--btn" class="rules__modal__button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path fill="#3B4262" fill-rule="evenodd" d="M16.97 0l2.122 2.121-7.425 7.425 7.425 7.425-2.121 2.12-7.425-7.424-7.425 7.425L0 16.97l7.425-7.425L0 2.121 2.121 0l7.425 7.425L16.971 0z" opacity=".25"/></svg>
+          </button>
+        </div>
+    </main>
+     <button id="rules--btn" class="rules__button">Rules</button>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
